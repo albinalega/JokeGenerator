@@ -7,13 +7,17 @@
 
 import UIKit
 
-//files, marks
+enum Link: String {
+    case imageURL = "https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-superJumbo.jpg"
+    case jokeURL = "https://v2.jokeapi.dev/joke/Any?safe-mode"
+}
 
 final class MainViewController: UIViewController {
-    
+//    MARK: - IB Outlets
     @IBOutlet var pepeImage: UIImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+//    MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(
@@ -27,6 +31,7 @@ final class MainViewController: UIViewController {
         fetchImage()
     }
 
+//    MARK: - IB Actions
     @IBAction func getAJokebuttonPressed() {
         guard let url = URL(string: Link.jokeURL.rawValue) else { return }
         
@@ -47,6 +52,7 @@ final class MainViewController: UIViewController {
     }
 }
 
+//    MARK: - Fetch Image
 extension MainViewController {
     private func fetchImage() {
         guard let url = URL(string: Link.imageURL.rawValue) else { return }
@@ -66,7 +72,3 @@ extension MainViewController {
     }
 }
 
-enum Link: String {
-    case imageURL = "https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-superJumbo.jpg"
-    case jokeURL = "https://v2.jokeapi.dev/joke/Any?safe-mode"
-}
