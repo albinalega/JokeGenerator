@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="getAJokebuttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFU-u2-8qq"/>
+                                    <segue destination="UlF-rG-yXe" kind="presentation" modalPresentationStyle="fullScreen" id="HgA-5U-jPK"/>
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-U5-RMR">
@@ -64,5 +66,26 @@
             </objects>
             <point key="canvasLocation" x="133.84615384615384" y="2.8436018957345972"/>
         </scene>
+        <!--Joke View Controller-->
+        <scene sceneID="j2A-wf-Auj">
+            <objects>
+                <viewController id="UlF-rG-yXe" customClass="JokeViewController" customModule="HomeWork_3_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mcs-Iw-7Ob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="glZ-Rg-Ryj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZQv-cx-Eym"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MoO-2v-mVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="2"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

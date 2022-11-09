@@ -14,6 +14,8 @@
 		555B0DB029169F390022C052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555B0DAF29169F390022C052 /* Assets.xcassets */; };
 		555B0DB329169F390022C052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555B0DB129169F390022C052 /* LaunchScreen.storyboard */; };
 		555B0DBB2916B4100022C052 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B0DBA2916B4100022C052 /* Joke.swift */; };
+		5594BAC3291BD0FE000D1DF7 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */; };
+		5594BAC5291BD196000D1DF7 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594BAC4291BD196000D1DF7 /* JokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		555B0DB229169F390022C052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		555B0DB429169F390022C052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555B0DBA2916B4100022C052 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		5594BAC4291BD196000D1DF7 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				555B0DBE29179DD70022C052 /* ViewControllers */,
 				555B0DC129179E260022C052 /* Storyboards */,
 				555B0DC029179E080022C052 /* Models */,
+				5594BAC6291BD39A000D1DF7 /* Extensions */,
 				555B0DAF29169F390022C052 /* Assets.xcassets */,
 			);
 			path = "HomeWork 3.02";
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				555B0DAA29169F380022C052 /* MainViewController.swift */,
+				5594BAC4291BD196000D1DF7 /* JokeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 				555B0DB129169F390022C052 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5594BAC6291BD39A000D1DF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +189,10 @@
 			files = (
 				555B0DAB29169F380022C052 /* MainViewController.swift in Sources */,
 				555B0DA729169F380022C052 /* AppDelegate.swift in Sources */,
+				5594BAC3291BD0FE000D1DF7 /* Extension + UIView.swift in Sources */,
 				555B0DBB2916B4100022C052 /* Joke.swift in Sources */,
 				555B0DA929169F380022C052 /* SceneDelegate.swift in Sources */,
+				5594BAC5291BD196000D1DF7 /* JokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

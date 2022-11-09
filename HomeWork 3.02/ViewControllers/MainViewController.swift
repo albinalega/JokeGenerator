@@ -12,7 +12,7 @@ enum Link: String {
     case jokeURL = "https://v2.jokeapi.dev/joke/Any?safe-mode"
 }
 
-final class MainViewController: UIViewController {
+class MainViewController: UIViewController {
 //    MARK: - IB Outlets
     @IBOutlet var pepeImage: UIImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
@@ -20,12 +20,7 @@ final class MainViewController: UIViewController {
 //    MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(
-            red: 203/255,
-            green: 251/255,
-            blue: 255/255,
-            alpha: 1
-        )
+        view.addBackgroundColor()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         fetchImage()
