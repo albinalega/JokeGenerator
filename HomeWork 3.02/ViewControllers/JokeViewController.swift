@@ -8,7 +8,7 @@
 import UIKit
 
 final class JokeViewController: UIViewController {
-    private var joke: Joke!
+    private var joke: Joke?
     
     @IBOutlet var setupLabel: UILabel!
     @IBOutlet var deliveryLabel: UILabel!
@@ -16,8 +16,8 @@ final class JokeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addGreenBackgroundColor()
-        setupLabel.text = joke.setup
-        deliveryLabel.text = joke.delivery
+        setupLabel.text = joke?.setup
+        deliveryLabel.text = joke?.delivery
     }
     
     @IBAction func oneMoreButtonPressed() {
