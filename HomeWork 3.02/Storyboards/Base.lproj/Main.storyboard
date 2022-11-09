@@ -37,7 +37,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="getAJokebuttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFU-u2-8qq"/>
-                                    <segue destination="UlF-rG-yXe" kind="presentation" modalPresentationStyle="fullScreen" id="HgA-5U-jPK"/>
+                                    <segue destination="UlF-rG-yXe" kind="presentation" id="HgA-5U-jPK"/>
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-U5-RMR">
@@ -71,10 +71,33 @@
             <objects>
                 <viewController id="UlF-rG-yXe" customClass="JokeViewController" customModule="HomeWork_3_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mcs-Iw-7Ob">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-sO-KJv">
+                                <rect key="frame" x="136" y="204.5" width="48" height="139"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J89-P0-bfq">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njH-sq-eec">
+                                        <rect key="frame" x="0.0" y="115" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="glZ-Rg-Ryj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4WZ-sO-KJv" firstAttribute="centerX" secondItem="Mcs-Iw-7Ob" secondAttribute="centerX" id="g6J-3B-gOq"/>
+                            <constraint firstItem="4WZ-sO-KJv" firstAttribute="centerY" secondItem="Mcs-Iw-7Ob" secondAttribute="centerY" id="vr8-Mb-AhW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZQv-cx-Eym"/>
                 </viewController>

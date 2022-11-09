@@ -13,6 +13,7 @@ final class JokeViewController: UIViewController {
         super.viewDidLoad()
         view.addBackgroundColor()
 
+        
     }
     
 

@@ -16,6 +16,7 @@
 		555B0DBB2916B4100022C052 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B0DBA2916B4100022C052 /* Joke.swift */; };
 		5594BAC3291BD0FE000D1DF7 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */; };
 		5594BAC5291BD196000D1DF7 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594BAC4291BD196000D1DF7 /* JokeViewController.swift */; };
+		5594BAC8291BE294000D1DF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594BAC7291BE294000D1DF7 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		555B0DBA2916B4100022C052 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		5594BAC4291BD196000D1DF7 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		5594BAC7291BE294000D1DF7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				555B0DAA29169F380022C052 /* MainViewController.swift */,
 				5594BAC4291BD196000D1DF7 /* JokeViewController.swift */,
+				5594BAC7291BE294000D1DF7 /* NetworkManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				555B0DAB29169F380022C052 /* MainViewController.swift in Sources */,
 				555B0DA729169F380022C052 /* AppDelegate.swift in Sources */,
 				5594BAC3291BD0FE000D1DF7 /* Extension + UIView.swift in Sources */,
+				5594BAC8291BE294000D1DF7 /* NetworkManager.swift in Sources */,
 				555B0DBB2916B4100022C052 /* Joke.swift in Sources */,
 				555B0DA929169F380022C052 /* SceneDelegate.swift in Sources */,
 				5594BAC5291BD196000D1DF7 /* JokeViewController.swift in Sources */,

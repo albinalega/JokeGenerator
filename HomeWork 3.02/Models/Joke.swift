@@ -6,6 +6,6 @@
 //
 
 struct Joke: Decodable {
-    let setup: String?
-    let delivery: String?
+    let setup: String
+    let delivery: String
 }
