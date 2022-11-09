@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 555B0D9E29169F380022C052 /* Build configuration list for PBXProject "HomeWork 3.02" */;
+			buildConfigurationList = 555B0D9E29169F380022C052 /* Build configuration list for PBXProject "JokeGenerator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -371,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		555B0D9E29169F380022C052 /* Build configuration list for PBXProject "HomeWork 3.02" */ = {
+		555B0D9E29169F380022C052 /* Build configuration list for PBXProject "JokeGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				555B0DB529169F390022C052 /* Debug */,
