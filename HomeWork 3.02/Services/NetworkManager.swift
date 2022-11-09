@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Enumerations
 enum NetworkError: Error {
     case invalidURL
     case noData
@@ -18,11 +19,13 @@ enum Link: String {
     case jokeURL = "https://v2.jokeapi.dev/joke/Any?safe-mode"
 }
 
+// MARK: - NetworkManager
 class NetworkManager {
     static let shared = NetworkManager()
     
     private init() {}
     
+// MARK: - Fetching methods
     func fetchImage(from url: String, completion: @escaping(Result<Data, NetworkError>) -> Void) {
         guard let url = URL(string: url ) else {
             completion(.failure(.invalidURL))

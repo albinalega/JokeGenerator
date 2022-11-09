@@ -21,13 +21,18 @@ class MainViewController: UIViewController {
         fetchImage()
     }
 
+//    MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let jokeVC = segue.destination as? JokeViewController else { return }
+        jokeVC.fetchJoke()
+    }
 //    MARK: - IB Actions
     @IBAction func getAJokebuttonPressed() {
         fetchJoke()
     }
 }
 
-// MARK: - Networking
+//    MARK: - Networking
 extension MainViewController {
     private func fetchImage() {
         NetworkManager.shared.fetchImage(from: Link.imageURL.rawValue) { [unowned self] result in
