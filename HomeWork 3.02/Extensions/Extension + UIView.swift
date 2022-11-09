@@ -8,11 +8,20 @@
 import UIKit
 
 extension UIView {
-    func addBackgroundColor() {
+    func addBlueBackgroundColor() {
         backgroundColor = UIColor(
             red: 203/255,
             green: 251/255,
             blue: 255/255,
+            alpha: 1
+        )
+    }
+    
+    func addGreenBackgroundColor() {
+        backgroundColor = UIColor(
+            red: 45/255,
+            green: 163/255,
+            blue: 75/255,
             alpha: 1
         )
     }

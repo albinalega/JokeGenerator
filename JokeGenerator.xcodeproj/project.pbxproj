@@ -68,6 +68,7 @@
 				555B0DBE29179DD70022C052 /* ViewControllers */,
 				555B0DC129179E260022C052 /* Storyboards */,
 				555B0DC029179E080022C052 /* Models */,
+				5594BAC9291BEFB8000D1DF7 /* Services */,
 				5594BAC6291BD39A000D1DF7 /* Extensions */,
 				555B0DAF29169F390022C052 /* Assets.xcassets */,
 			);
@@ -79,7 +80,6 @@
 			children = (
 				555B0DAA29169F380022C052 /* MainViewController.swift */,
 				5594BAC4291BD196000D1DF7 /* JokeViewController.swift */,
-				5594BAC7291BE294000D1DF7 /* NetworkManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +117,14 @@
 				5594BAC2291BD0FE000D1DF7 /* Extension + UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5594BAC9291BEFB8000D1DF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5594BAC7291BE294000D1DF7 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

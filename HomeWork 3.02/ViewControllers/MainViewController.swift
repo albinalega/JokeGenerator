@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
 //    MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addBackgroundColor()
+        view.addBlueBackgroundColor()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         fetchImage()

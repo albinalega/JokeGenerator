@@ -8,13 +8,16 @@
 import UIKit
 
 final class JokeViewController: UIViewController {
-
+    @IBOutlet var setupLabel: UILabel!
+    @IBOutlet var deliveryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addBackgroundColor()
+        view.addGreenBackgroundColor()
 
         
     }
     
-
+    @IBAction func oneMoreButtonPressed() {
+    }
 }
