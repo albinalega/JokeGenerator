@@ -91,43 +91,38 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8p1-sg-56s">
-                                <rect key="frame" x="93" y="418" width="134" height="40.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbU-9t-vUB">
-                                        <rect key="frame" x="0.0" y="0.0" width="134" height="40.5"/>
-                                        <color key="backgroundColor" red="0.83317689819999996" green="0.95752636219999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.3258160819" green="0.63176688759999999" blue="0.33478798780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="ONE MORE">
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="oneMoreButtonPressed" destination="UlF-rG-yXe" eventType="touchUpInside" id="Jgl-7t-oIf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🪰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hic-qA-gQ8">
                                 <rect key="frame" x="138" y="63" width="44" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbU-9t-vUB">
+                                <rect key="frame" x="93" y="390.5" width="134" height="40.5"/>
+                                <color key="backgroundColor" red="0.83317689819999996" green="0.95752636219999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.3258160819" green="0.63176688759999999" blue="0.33478798780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ONE MORE">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="oneMoreButtonPressed" destination="UlF-rG-yXe" eventType="touchUpInside" id="Jgl-7t-oIf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="glZ-Rg-Ryj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nbU-9t-vUB" firstAttribute="centerX" secondItem="Mcs-Iw-7Ob" secondAttribute="centerX" id="0fz-Bp-NaS"/>
                             <constraint firstItem="glZ-Rg-Ryj" firstAttribute="trailing" secondItem="4WZ-sO-KJv" secondAttribute="trailing" constant="16" id="9Vq-bZ-ato"/>
-                            <constraint firstItem="8p1-sg-56s" firstAttribute="centerX" secondItem="Mcs-Iw-7Ob" secondAttribute="centerX" id="B6y-KK-Vsq"/>
+                            <constraint firstItem="Hic-qA-gQ8" firstAttribute="top" secondItem="glZ-Rg-Ryj" secondAttribute="top" constant="63" id="Fmp-0a-nGk"/>
                             <constraint firstItem="4WZ-sO-KJv" firstAttribute="leading" secondItem="glZ-Rg-Ryj" secondAttribute="leading" constant="16" id="O5j-NF-lMP"/>
-                            <constraint firstItem="8p1-sg-56s" firstAttribute="top" secondItem="4WZ-sO-KJv" secondAttribute="bottom" constant="120" id="QJJ-e7-hMz"/>
-                            <constraint firstItem="4WZ-sO-KJv" firstAttribute="top" secondItem="Hic-qA-gQ8" secondAttribute="bottom" constant="100" id="VPx-QM-wfZ"/>
+                            <constraint firstItem="glZ-Rg-Ryj" firstAttribute="bottom" secondItem="nbU-9t-vUB" secondAttribute="bottom" constant="117" id="UZv-2h-HyG"/>
                             <constraint firstItem="4WZ-sO-KJv" firstAttribute="centerX" secondItem="Mcs-Iw-7Ob" secondAttribute="centerX" id="g6J-3B-gOq"/>
                             <constraint firstItem="Hic-qA-gQ8" firstAttribute="centerX" secondItem="Mcs-Iw-7Ob" secondAttribute="centerX" id="kVg-UQ-6sw"/>
                             <constraint firstItem="4WZ-sO-KJv" firstAttribute="centerY" secondItem="Mcs-Iw-7Ob" secondAttribute="centerY" constant="-20" id="vr8-Mb-AhW"/>
@@ -141,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MoO-2v-mVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="2"/>
+            <point key="canvasLocation" x="875.625" y="1.056338028169014"/>
         </scene>
     </scenes>
     <resources>
