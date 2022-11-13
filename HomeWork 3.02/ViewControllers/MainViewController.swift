@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
     @IBOutlet var pepeImage: UIImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    private var joke: Joke?
+    
 //    MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,10 +49,10 @@ extension MainViewController {
     }
     
     private func fetchJoke() {
-        NetworkManager.shared.fetch(Joke.self, from: Link.jokeURL.rawValue) { result in
+        NetworkManager.shared.fetchJoke(from: Link.jokeURL.rawValue) { [weak self] result in
             switch result {
             case .success(let joke):
-                print(joke)
+                self?.joke = joke
             case .failure(let error):
                 print(error.localizedDescription)
             }

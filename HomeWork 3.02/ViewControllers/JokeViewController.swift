@@ -16,30 +16,35 @@ final class JokeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addGreenBackgroundColor()
-        setupLabel.text = joke?.setup
-        deliveryLabel.text = joke?.delivery
     }
     
     @IBAction func oneMoreButtonPressed() {
+        fetchJoke()
     }
 }
 
 //  MARK: - Networking
 extension JokeViewController {
     func fetchJoke() {
-        guard let url = URL(string: Link.jokeURL.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                self?.joke = try JSONDecoder().decode(Joke.self, from: data)
-            } catch let error {
+        NetworkManager.shared.fetchJoke(from: Link.jokeURL.rawValue) { [weak self] result in
+            switch result {
+            case .success(let joke):
+                self?.joke = joke
+                self?.setupLabel.text = joke.setup
+                self?.deliveryLabel.text = joke.delivery
+            case .failure(let error):
                 print(error.localizedDescription)
             }
         }
     }
 }
+
+//NetworkManager.shared.fetch(Joke.self, from: Link.jokeURL.rawValue) { [weak self] result in
+//    switch result {
+//    case .success(let joke):
+//        self?.setupLabel.text = joke.setup
+//        self?.deliveryLabel.text = joke.delivery
+//    case .failure(let error):
+//        print(error.localizedDescription)
+//    }
+//}
